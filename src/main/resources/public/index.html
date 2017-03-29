@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Streaming Restaurants !</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- External javascript
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="javascript/restaurants.js"></script>
+    <script src="javascript/oboe-browser.js"></script>
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    <h4>Search for Top Restaurants</h4>
+    <div class="row">
+
+        <div class="six columns">
+            <label for="cuisineInput">Cuisine</label>
+            <select class="u-full-width" id="cuisineInput">
+                <option value="French">French</option>
+                <option value="Mediterranean">Mediterranean</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Italian">Italian</option>
+                <option value="Sushi">Sushi</option>
+                <option value="Sausage">Sausage</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Polish">Polish</option>
+                <option value="Moroccan">Moroccan</option>
+                <option value="Sichuan">Sichuan</option>
+                <option value="Indonesian">Indonesian</option>
+                <option value="Korean">Korean</option>
+                <option value="African">African</option>
+                <option value="Indian">Indian</option>
+                <option value="Belgian" selected>Belgian</option>
+                <option value="Russian">Russian</option>
+                <option value="Tibetan">Tibetan</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Thai">Thai</option>
+                <option value="Brazilian">Brazilian</option>
+                <option value="Greek">Greek</option>
+                <option value="Asian">Asian</option>
+                <option value="Lebanese">Lebanese</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Breakfast">Breakfast</option>
+                <option value="Peruvian">Peruvian</option>
+                <option value="Cajun">Cajun</option>
+                <option value="Vietnamese">Vietnamese</option>
+                <option value="Caribbean">Caribbean</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Fast food"> food</option>
+                <option value="American">American</option>
+                <option value="Philippine">Philippine</option>
+                <option value="Middle Eastern"> Eastern</option>
+                <option value="Cuban">Cuban</option>
+                <option value="Portuguese">Portuguese</option>
+                <option value="Irish">Irish</option>
+                <option value="Australian">Australian</option>
+                <option value="Barbecue">Barbecue</option>
+                <option value="Malaysian">Malaysian</option>
+                <option value="German">German</option>
+            </select>
+            <label>
+            <input type="checkbox" id="streamInput">
+            <span class="label-body">Stream results</span>
+            </label>
+        </div>
+        <div>
+
+        </div>
+        <div class="four columns" style="padding-top: 29px">
+            <button class="button-primary" id="searchButton" onclick="findRestaurants()">Search</button>
+            <button class="button-primary" id="clearButton" onclick="clearRestaurants()">Clear</button>
+        </div>
+    </div>
+
+    <table class="u-full-width">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Stars</th>
+        </tr>
+        </thead>
+        <tbody id="restaurantList">
+        <tr>
+            <td>Select a Cuisine and search....</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
