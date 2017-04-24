@@ -42,6 +42,6 @@ const createRowForRestaurant = (restaurant) => {
     row.appendChild(tdStars);
 
     return row;
-}
+};
 
 

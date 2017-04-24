@@ -7,5 +7,5 @@ import reactor.core.publisher.Mono;
 
 public interface RestaurantRepository extends ReactiveCrudRepository<Restaurant,ObjectId> {
 
-    Flux<Restaurant> findByCuisineAndAndStarsGreaterThan(Mono<String> lastName, Mono<Double> stars);
+    Flux<Restaurant> findByCuisineAndAndStarsGreaterThan(Mono<String> cuisine, Mono<Double> stars);
 }

@@ -33,7 +33,7 @@ public class WebClientApplication {
                     //.accept(MediaType.APPLICATION_JSON_UTF8)
                     //.accept(MediaType.TEXT_EVENT_STREAM)
                     .exchange()
-                    .flatMap(response -> response.bodyToFlux(Restaurant.class))
+                    .flatMapMany(response -> response.bodyToFlux(Restaurant.class))
                     .subscribe(restaurant -> System.out.println(restaurant.toString()));
 
         };
