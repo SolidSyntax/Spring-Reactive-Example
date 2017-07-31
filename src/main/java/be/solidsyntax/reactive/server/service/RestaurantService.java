@@ -33,7 +33,7 @@ public class RestaurantService {
 
 
     private Flux<Restaurant> doSomethingSlow(Flux<Restaurant> restaurantFlux) {
-        Flux<Long> durationFlux = Flux.interval(Duration.ofMillis(5));
+        Flux<Long> durationFlux = Flux.interval(Duration.ofMillis(5)).onBackpressureDrop();
         return Flux.zip(restaurantFlux, durationFlux).map(Tuple2::getT1);
     }
 }
