@@ -12,7 +12,7 @@ A sample project to show the new reactive programming capabilities of Spring Boo
  - Import the json file contained in src/main/resources/restaurants_collection.zip to a MongoDB database called 'test' in a collection named 'restaurants'.  
  - Run the server with 'gradle bootRun'
 
-navigate to http://localhost:8000/index.html to view the sample website using Oboe.js
+navigate to http://localhost:8080/index.html to view the sample website using Oboe.js
 
 Or  
 
